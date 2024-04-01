@@ -3,17 +3,17 @@
 {
   home.packages = [
 	#shells
-	# zsh
-    oh-my-zsh
-	thefuck
+	pkgs.zsh
+    pkgs.oh-my-zsh
+	pkgs.thefuck
 
 	#terminal utils
-	htop
-	nethogs
-	man-db
-	man-pages
-	tmux
-	porsmo
+	pkgs.htop
+	pkgs.nethogs
+	pkgs.man-db
+	pkgs.man-pages
+	pkgs.tmux
+	pkgs.porsmo
   ];
   programs.zsh = { 
     enable = true;

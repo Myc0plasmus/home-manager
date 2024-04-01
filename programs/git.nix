@@ -3,10 +3,10 @@
 {
 	home.packages = [
 		#git
-		git
-		git-lfs
-		hub
-	]
+		pkgs.git
+		pkgs.git-lfs
+		pkgs.hub
+	];
 	programs.git = {
 		enable = true;
 		userName = "Myc0plasmus";
@@ -16,5 +16,5 @@
 			co = "checkout";
 			cm = "commit";
 		};
-	}
+	};
 }
