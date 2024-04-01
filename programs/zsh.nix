@@ -2,10 +2,8 @@
 
 {
   home.packages = [
-	
-
 	#shells
-	zsh
+	# zsh
     oh-my-zsh
 	thefuck
 
