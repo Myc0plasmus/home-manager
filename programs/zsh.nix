@@ -6,6 +6,7 @@
 	pkgs.zsh
     pkgs.oh-my-zsh
 	pkgs.thefuck
+	pkgs.fzf
 
 	#terminal utils
 	pkgs.htop
@@ -18,9 +19,9 @@
   programs.zsh = { 
     enable = true;
     syntaxHighlighting.enable = true;
-    autosuggestions.enable = true;
+    autosuggestion.enable = true;
     enableCompletion = true;
-    ohMyZsh = {
+    oh-my-zsh = {
       enable = true;
       theme = "mh";
       plugins = [ "git" "thefuck" ];
