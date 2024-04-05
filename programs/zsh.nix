@@ -24,7 +24,7 @@
     oh-my-zsh = {
       enable = true;
       theme = "mh";
-      plugins = [ "git" "thefuck" ];
+      plugins = [ "git" "thefuck" "docker" "kubectl"];
     };
  #    loginShellInit = ''
  #    if test $(id --user $USER) -ge 1000 && test $(tty) = "/dev/tty1" 
