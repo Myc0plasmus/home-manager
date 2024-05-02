@@ -54,7 +54,7 @@ in
     # '')
   ];
 
-  home.file = {
+  home.file."dotfilesLink" = {
 	source = ./dotfiles;
 	target = ".config/dotfiles";
 	directory = true;
