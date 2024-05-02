@@ -71,7 +71,7 @@ in
 		  background = bl;
 		  text = wh;
 		  indicator = "#2e9ef4";
-		  child_border = " #285577"
+		  child_border = " #285577";
 		};
 		unfocused = {
 		  border = bg;
