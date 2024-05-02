@@ -26,7 +26,7 @@ let
 
 in
 {
-  pkgs.home.packages = [
+  home.packages = [
         pkgs.dracula-theme
 		pkgs.glib
 
