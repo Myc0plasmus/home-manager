@@ -71,28 +71,28 @@ in
 		  background = bl;
 		  text = wh;
 		  indicator = "#2e9ef4";
-		  child_border = " #285577";
+		  childBorder = "#285577";
 		};
 		unfocused = {
 		  border = bg;
 		  background = bb;
 		  text = ia;
 		  indicator = "#292d2e";
-		  child_border = "#222222";
+		  childBorder = "#222222";
 		};
 		focusedInactive = {
 		  border = bg;
 		  background = bb;
 		  text = bl;
 		  indicator = "#484e50";
-		  child_border = "#5f676a";
+		  childBorder = "#5f676a";
 		};
 		urgent = {
 		  border = rd;
 		  background = rd;
 		  text = wh;
 		  indicator = "#900000";
-		  child_border = "#900000";
+		  childBorder = "#900000";
 		};
       };
 	  modifier = "Mod4";
