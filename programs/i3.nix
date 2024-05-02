@@ -1,4 +1,4 @@
-{home_username, inputs, config, pkgs, ... }:
+{home_username, inputs, config, pkgs, lib, ... }:
 
 let
   # colors
