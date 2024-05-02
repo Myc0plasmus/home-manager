@@ -54,10 +54,10 @@ in
     # '')
   ];
 
-  home.file."dotfilesLink" = {
+  home.file."${HOME}/.config/dotfiles" = {
 	source = ./dotfiles;
-	target = ".config/dotfiles";
-	directory = true;
+	# target = ".config/dotfiles";
+	# directory = true;
   };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
