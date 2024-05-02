@@ -7,7 +7,7 @@
 	programs.rofi = {
 		enable = true;
 		terminal = "kitty";
-		plugins.packages = [
+		plugins = [
 			pkgs.rofi-vpn
 			pkgs.rofi-bluetooth
 			pkgs.rofi-power-menu
