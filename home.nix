@@ -54,7 +54,7 @@ in
     # '')
   ];
 
-  home.file."${HOME}/.config/dotfiles" = {
+  home.file."$HOME/.config/dotfiles" = {
 	source = ./dotfiles;
 	# target = ".config/dotfiles";
 	# directory = true;
