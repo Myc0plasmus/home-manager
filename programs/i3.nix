@@ -64,7 +64,7 @@ in
   ];
   xsession.windowManager.i3 = {
 	enable = true;
-    config = {
+    config = rec {
 	  colors = {
         focused = {
 		  border = bl;
