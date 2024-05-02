@@ -28,9 +28,9 @@ in
   imports = [
 	./programs/zsh.nix
 	./programs/git.nix
-	./programs/i3.nix
-	./programs/polybar.nix
-	./programs/rofi.nix
+	# ./programs/i3.nix
+	# ./programs/polybar.nix
+	# ./programs/rofi.nix
   ];
   # The home.packages option allows you to install Nix packages into your
   # environment.
