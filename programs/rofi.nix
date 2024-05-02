@@ -18,7 +18,7 @@
 		];
 		# extraConfig = (builtins.readFile ../dotfiles/rofi/config.rasi);
 	};
-	home.file."$HOME/.config/rofi" = {
+	home.file.".config/rofi" = {
 		source = ../dotfiles/rofi;
 		
 	# target = ".config/dotfiles";
