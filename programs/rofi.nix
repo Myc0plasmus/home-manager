@@ -16,6 +16,6 @@
 			pkgs.rofi-systemd
 			pkgs.networkmanager_dmenu
 		];
-		extraConfig = builtins.readFile ../dotfiles/rofi/config.rasi;
+		extraConfig = (builtins.readFile ../dotfiles/rofi/config.rasi);
 	};
 }
