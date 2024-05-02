@@ -144,14 +144,14 @@ in
 		"${modifier}+x" = "[urgent=latest] focus";
 		
 		#vertical and horizontal split
-        bindsym $mod+b splith
-        bindsym $mod+v splitv
+        "${modifier}+b" = "splith";
+        "${modifier}+v" = "splitv";
 
 		#move focus with hjkl
-        bindsym $mod+$left focus left
-        bindsym $mod+$down focus down
-        bindsym $mod+$up focus up
-        bindsym $mod+$right focus right
+        "${modifier}+${Left}" = "focus left";
+        "${modifier}+${Down}" = "focus down";
+        "${modifier}+${Up}" = "focus up";
+        "${modifier}+${Right}" = "focus right";
 
 	  };
       startup = [
