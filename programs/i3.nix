@@ -62,6 +62,11 @@ in
 		pkgs.sddm
 		pkgs.ly
   ];
+  home.file.".config/multilock" = {
+	source = ../dotfiles/multilock;
+	# target = ".config/dotfiles";
+	# directory = true;
+  };
   xsession.windowManager.i3 = {
 	enable = true;
     config = rec {
@@ -110,7 +115,7 @@ in
 		"${modifier}+Shift+q" = "kill";
 
 		# Start your launcher
-		"${modifier}+d" = "exec $menu";
+		"${modifier}+d" = "exec ${menu}";
 
 		# Start your bin launcher
 		"${modifier}+Ctrl+d" = "exec rofi -show run";

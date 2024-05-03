@@ -9,6 +9,7 @@ let
 		#   cp -r $src/* $out/
 		# '';
   # };
+
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -28,9 +29,9 @@ in
   imports = [
 	./programs/zsh.nix
 	./programs/git.nix
-	# ./programs/i3.nix
-	# ./programs/polybar.nix
-	# ./programs/rofi.nix
+	./programs/i3.nix
+	./programs/polybar.nix
+	./programs/rofi.nix
   ];
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -54,8 +55,8 @@ in
     # '')
   ];
 
-  home.file.".config/dotfiles" = {
-	source = ./dotfiles;
+  home.file.".config/user-wallpapers" = {
+	source = ./dotfiles/user-wallpapers;
 	# target = ".config/dotfiles";
 	# directory = true;
   };
