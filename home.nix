@@ -39,7 +39,10 @@ in
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-
+	lockscript
+	monitorScript
+	batteryScript
+	launchPolybar
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -62,10 +65,10 @@ in
   # plain files is through 'home.file'.
   home.file = {
 	".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
-	".local/bin/lockscript".source = lockscript;
-	".local/bin/monitorScript".source = monitorScript;
-	".local/bin/batteryScript".source = batteryScript;
-	".local/bin/launchPolybar".source = launchPolybar;
+	".local/bin/lockscript".source = "${lockscript}/bin/lockscript";
+	".local/bin/monitorScript".source = "${monitorScript}/bin/monitorScript";
+	".local/bin/batteryScript".source = "${batteryScript}/bin/batteryScript";
+	".local/bin/launchPolybar".source = "${launchPolybar}/bin/launchPolybar";
     # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # symlink to the Nix store copy.

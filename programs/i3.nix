@@ -70,6 +70,18 @@ in
   xsession.windowManager.i3 = {
 	enable = true;
     config = rec {
+	  workspaceOutputAssign = [
+		{ workspace = "1:Main"; output = sm; }
+		{ workspace = "2:Comms"; output = fm; }
+		{ workspace = "3:Web"; output = sm; }
+		{ workspace = "4:Config"; output = fm; }
+		{ workspace = "5:VM"; output = sm; }
+		{ workspace = "6:Other"; output = fm; }
+		{ workspace = "7:Other"; output = sm; }
+		{ workspace = "8:Other"; output = fm; }
+		{ workspace = "9:Other"; output = sm; }
+		{ workspace = "10:Other"; output = fm; }
+	  ];
 	  bars = [];
 	  colors = {
         focused = {
@@ -169,7 +181,7 @@ in
 	  };
       startup = [
         {
-          command = "monitorScript && sleep 1 && systemctl --user restart polybar.service";
+          command = "monitorScript && sleep 1 && launchPolybar";
           always = true;
           notification = false;
         }
