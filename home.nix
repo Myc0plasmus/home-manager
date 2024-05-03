@@ -9,7 +9,10 @@ let
 		#   cp -r $src/* $out/
 		# '';
   # };
-
+  lockscript = import ./scripts/lockscript.nix {inherit pkgs;};
+  monitorScript = import ./scripts/monitorScript.nix {inherit pkgs;};
+  batteryScript = import ./scripts/batteryScript.nix {inherit pkgs;};
+  launchPolybar = import ./scripts/launchPolybar.nix {inherit pkgs;};
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -55,25 +58,25 @@ in
     # '')
   ];
 
-  home.file.".config/user-wallpapers" = {
-	source = ./dotfiles/user-wallpapers;
-	# target = ".config/dotfiles";
-	# directory = true;
-  };
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
-  # home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
+  home.file = {
+	".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
+	".local/bin/lockscript".source = lockscript;
+	".local/bin/monitorScript".source = monitorScript;
+	".local/bin/batteryScript".source = batteryScript;
+	".local/bin/launchPolybar".source = launchPolybar;
+    # Building this configuration will create a copy of 'dotfiles/screenrc' in
+    # the Nix store. Activating the configuration will then make '~/.screenrc' a
+    # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 
-    # # You can also set the file content immediately.
+    # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-  # };
+  };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home

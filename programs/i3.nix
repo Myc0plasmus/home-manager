@@ -106,7 +106,7 @@ in
 	  menu = "rofi -show drun";
 	  keybindings = lib.mkOptionDefault {
 		# lockscreen
-	    "${modifier}+Ctrl+l"="exec \"$HOME/.config/dotfiles/i3/lockscript.sh\"";
+	    "${modifier}+Ctrl+l"="exec lockscript";
 		
 		#start terminal
         "${modifier}+Return"="exec ${terminal}";
@@ -169,7 +169,7 @@ in
 	  };
       startup = [
         {
-          command = "$HOME/.config/dotfiles/i3/monitorScript.sh && sleep 1 && systemctl --user restart polybar.service";
+          command = "monitorScript && sleep 1 && systemctl --user restart polybar.service";
           always = true;
           notification = false;
         }
@@ -184,7 +184,7 @@ in
           notification = false;
         }
 		{
-          command = "xautolock -time 15 -locker '$HOME/.config/dotfiles/i3/lockscript.sh'";
+          command = "xautolock -time 15 -locker 'lockscript'";
           always = true;
           notification = false;
         }

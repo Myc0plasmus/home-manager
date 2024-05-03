@@ -6,7 +6,7 @@
 	];
 	services.polybar = {
 		enable = true;
-		script = "$HOME/.config/dotfiles/polybar/launch.sh";
+		script = "launchPolybar";
 		config = ../dotfiles/polybar/config.ini;
 	};
 }
