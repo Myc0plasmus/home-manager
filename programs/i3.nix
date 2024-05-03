@@ -71,16 +71,16 @@ in
 	enable = true;
     config = rec {
 	  workspaceOutputAssign = [
-		{ workspace = "1:Main"; output = sm; }
-		{ workspace = "2:Comms"; output = fm; }
-		{ workspace = "3:Web"; output = sm; }
-		{ workspace = "4:Config"; output = fm; }
-		{ workspace = "5:VM"; output = sm; }
-		{ workspace = "6:Other"; output = fm; }
-		{ workspace = "7:Other"; output = sm; }
-		{ workspace = "8:Other"; output = fm; }
-		{ workspace = "9:Other"; output = sm; }
-		{ workspace = "10:Other"; output = fm; }
+		{ workspace = "1"; output = sm; }
+		{ workspace = "2"; output = fm; }
+		{ workspace = "3"; output = sm; }
+		{ workspace = "4"; output = fm; }
+		{ workspace = "5"; output = sm; }
+		{ workspace = "6"; output = fm; }
+		{ workspace = "7"; output = sm; }
+		{ workspace = "8"; output = fm; }
+		{ workspace = "9"; output = sm; }
+		{ workspace = "10"; output = fm; }
 	  ];
 	  bars = [];
 	  colors = {
@@ -89,28 +89,28 @@ in
 		  background = bl;
 		  text = wh;
 		  indicator = "#2e9ef4";
-		  childBorder = "#285577";
+		  childBorder = bb;
 		};
 		unfocused = {
 		  border = bg;
 		  background = bb;
 		  text = ia;
 		  indicator = "#292d2e";
-		  childBorder = "#222222";
+		  childBorder = bb;
 		};
 		focusedInactive = {
 		  border = bg;
 		  background = bb;
 		  text = bl;
 		  indicator = "#484e50";
-		  childBorder = "#5f676a";
+		  childBorder = bb;
 		};
 		urgent = {
 		  border = rd;
 		  background = rd;
 		  text = wh;
 		  indicator = "#900000";
-		  childBorder = "#900000";
+		  childBorder = bb;
 		};
       };
 	  modifier = "Mod4";
@@ -186,7 +186,7 @@ in
           notification = false;
         }
         {
-          command = "feh --bg-fill $HOME/.config/dotfiles/i3/wp12329536-nixos-wallpapers.png";
+          command = "feh --bg-fill $HOME/.config/user-wallpapers/wp12329536-nixos-wallpapers.png";
           always = true;
           notification = false;
         }
@@ -221,7 +221,7 @@ in
           notification = false;
         }
 		{
-          command = "multiscreenlock -u $HOME/.config/dotfiles/i3/lockscreen.png";
+          command = "multiscreenlock -u $HOME/.config/user-wallpapers/lockscreen.png";
           always = false;
           notification = false;
         }

@@ -6,8 +6,8 @@
 	];
 	services.polybar = {
 		enable = true;
-		# script = "launchPolybar &";
-		script = "echo useless &";
+		# script = "$HOME/.local/bin/launchPolybar &";
+		script = "echo useless";
 		config = ../dotfiles/polybar/config.ini;
 	};
 }

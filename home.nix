@@ -65,10 +65,13 @@ in
   # plain files is through 'home.file'.
   home.file = {
 	".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
-	".local/bin/lockscript".source = "${lockscript}/bin/lockscript";
-	".local/bin/monitorScript".source = "${monitorScript}/bin/monitorScript";
-	".local/bin/batteryScript".source = "${batteryScript}/bin/batteryScript";
-	".local/bin/launchPolybar".source = "${launchPolybar}/bin/launchPolybar";
+	".config/polybar-spotify".source = inputs.polybar-spotify;
+
+	#linking those scripts to .local/bin doesn't seem to put them in path
+	# ".local/bin/lockscript".source = "${lockscript}/bin/lockscript";
+	# ".local/bin/monitorScript".source = "${monitorScript}/bin/monitorScript";
+	# ".local/bin/batteryScript".source = "${batteryScript}/bin/batteryScript";
+	# ".local/bin/launchPolybar".source = "${launchPolybar}/bin/launchPolybar";
     # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # symlink to the Nix store copy.
