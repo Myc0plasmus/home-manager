@@ -35,6 +35,8 @@ in
 	./programs/i3.nix
 	./programs/polybar.nix
 	./programs/rofi.nix
+	#./nixvim/neovim.nix
+	inputs.nixvim.homeManagerModules.nixvim
   ];
   # The home.packages option allows you to install Nix packages into your
   # environment.

@@ -186,7 +186,7 @@ in
           notification = false;
         }
         {
-          command = "feh --bg-fill $HOME/.config/user-wallpapers/wp12329536-nixos-wallpapers.png";
+          command = "feh --bg-scale $HOME/.config/user-wallpapers/wp12329536-nixos-wallpapers.png"; #bg color: #1d1f27
           always = true;
           notification = false;
         }
@@ -225,7 +225,11 @@ in
           always = false;
           notification = false;
         }
-
+		 {
+          command = "exec i3-msg workspace 1";
+          always = false;
+          notification = false;
+        }
 
 
 

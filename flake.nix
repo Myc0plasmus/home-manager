@@ -9,11 +9,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 	polybar-spotify = {
-	  url = "git+https://github.com/PrayagS/polybar-spotify.git";
+	  url = "github:PrayagS/polybar-spotify";
+	  flake = false;
 	};
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, polybar-spotify, ... }@inputs:
+  outputs = { nixpkgs, home-manager, polybar-spotify, nixvim, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
