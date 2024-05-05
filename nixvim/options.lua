@@ -15,7 +15,7 @@ vim.o.hidden = true --for toggleterm
 -- vim.cmd[[set clipboard+=unnamedplus]]
 
 -- colorscheme
-vim.cmd[[colorscheme abscs]]
+-- vim.cmd[[colorscheme abscs]]
 
 -- vim.g.jupytext_enable = 1
 -- vim.g.jupytext_command = 'jupytext'
