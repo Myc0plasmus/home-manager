@@ -6,7 +6,7 @@ in
 {
   imports = [
 	(getConfig "nvim-tree.nix")
-	# (getConfig "telescope.nix")
+	(getConfig "telescope.nix")
 	# (getConfig "toggleterm.nix")
 	# (getConfig "toggleterm.nix")
 	(getConfig "lsp.nix")

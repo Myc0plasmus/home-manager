@@ -7,7 +7,7 @@
 		enable = true;
 		triggersBlackList = {
 			i = [
-			  "j"
+			  ";"
 			  "\\"
 			];
 		};
