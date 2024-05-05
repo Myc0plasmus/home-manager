@@ -9,7 +9,8 @@ in
 	# (getConfig "telescope.nix")
 	# (getConfig "toggleterm.nix")
 	# (getConfig "toggleterm.nix")
-	# (getConfig "lsp.nix")
+	(getConfig "lsp.nix")
+	(getConfig "which-key.nix")
 
   ];
   programs.nixvim = {
@@ -28,7 +29,6 @@ in
 		lualine.enable = true;
 		comment.enable = true;
 		# treesitter.enable = true;
-		which-key.enable = true;
 		marks.enable = true;
 		gitsigns.enable = true;
 	};
