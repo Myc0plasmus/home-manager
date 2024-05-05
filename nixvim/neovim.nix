@@ -1,8 +1,16 @@
 { config,inputs , pkgs, ... }:
 
+let
+  getConfig = str: ./plugSetup/${str};
+in
 {
   imports = [
-	./nvim-tree.nix
+	(getConfig "nvim-tree.nix")
+	# (getConfig "telescope.nix")
+	# (getConfig "toggleterm.nix")
+	# (getConfig "toggleterm.nix")
+	# (getConfig "lsp.nix")
+
   ];
   programs.nixvim = {
 	enable = true;
@@ -19,8 +27,10 @@
 	plugins = {
 		lualine.enable = true;
 		comment.enable = true;
-		treesitter.enable = true;
+		# treesitter.enable = true;
 		which-key.enable = true;
+		marks.enable = true;
+		gitsigns.enable = true;
 	};
   };
 }
