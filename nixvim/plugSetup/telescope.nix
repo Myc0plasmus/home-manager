@@ -13,7 +13,7 @@
 			};
 		};
 		keymaps = [
-			{mode = ["n"]; key = "<leader>t"; action = "<cmd>Telescope<cr>"}
+			{mode = ["n"]; key = "<leader>t"; action = "<cmd>Telescope<cr>";}
 		];
 	};
 }
