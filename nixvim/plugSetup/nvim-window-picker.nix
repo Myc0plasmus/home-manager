@@ -3,7 +3,10 @@
 {
 	programs.nixvim = {
 		extraPlugins = with pkgs.vimPlugins; [
-			nvim-window-picker
+			{
+				plugin = nvim-window-picker;
+				config = builtins.readFile ./nvim-window-picker-config.lua;
+			}
 		];
 		
 		keymaps = [

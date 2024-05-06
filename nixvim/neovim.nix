@@ -73,11 +73,8 @@ in
 		marks.enable = true;
 		gitsigns.enable = true;
 		nvim-colorizer.enable = true;
-		hardtime.enable = true;
-		notfiy.enable = true;
+		# hardtime.enable = true;
+		notify.enable = true;
 	};
-	extraPlugins = with pkgs.vimPlugins; [
-		nvim-window-picker
-	];
   };
 }
