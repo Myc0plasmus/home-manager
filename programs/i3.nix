@@ -85,32 +85,32 @@ in
 	  bars = [];
 	  colors = {
         focused = {
-		  border = bl;
+		  border = bg;
 		  background = bl;
 		  text = wh;
-		  indicator = "#2e9ef4";
-		  childBorder = bb;
+		  indicator = ia;
+		  childBorder = bg;
 		};
 		unfocused = {
 		  border = bg;
 		  background = bb;
 		  text = ia;
-		  indicator = "#292d2e";
-		  childBorder = bb;
+		  indicator = ia;
+		  childBorder = bg;
 		};
 		focusedInactive = {
 		  border = bg;
 		  background = bb;
 		  text = bl;
-		  indicator = "#484e50";
-		  childBorder = bb;
+		  indicator = ia;
+		  childBorder = bg;
 		};
 		urgent = {
 		  border = rd;
 		  background = rd;
 		  text = wh;
-		  indicator = "#900000";
-		  childBorder = bb;
+		  indicator = ia;
+		  childBorder = bg;
 		};
       };
 	  modifier = "Mod4";

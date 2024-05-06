@@ -22,5 +22,7 @@ vim.o.hidden = true --for toggleterm
 -- vim.g.jupytext_fmt = 'md'
 -- 
 
-vim.cmd[[let g:coq_settings = { 'auto_start': 'shut-up' }]]
+-- vim.cmd[[let g:coq_settings = { 'auto_start': 'shut-up' }]]
+-- vim.cmd[[highlight TelescopeBorder guifg=#ffffff]]
+-- vim.cmd[[highlight TelescopeResultsTitle guifg=#ffffff]]
 

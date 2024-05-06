@@ -31,7 +31,7 @@
 					"]d" = "goto_next";
 									};
 				keymaps.lspBuf = {
-
+					"K" = "hover";
 					"<space>ca" = "code_action";
 					"<leader>gD" = "declaration";
 					"<leader>rn" = "rename";
