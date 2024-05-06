@@ -9,6 +9,8 @@ in
 	(getConfig "telescope.nix")
 	(getConfig "toggleterm.nix")
 	# (getConfig "cmp.nix")
+	# (getConfig "project.nix")
+	(getConfig "nvim-window-picker.nix")
 	(getConfig "harpoon.nix")
 	(getConfig "lsp.nix")
 	(getConfig "which-key.nix")
@@ -71,6 +73,11 @@ in
 		marks.enable = true;
 		gitsigns.enable = true;
 		nvim-colorizer.enable = true;
+		hardtime.enable = true;
+		notfiy.enable = true;
 	};
+	extraPlugins = with pkgs.vimPlugins; [
+		nvim-window-picker
+	];
   };
 }
