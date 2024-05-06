@@ -7,8 +7,9 @@ in
   imports = [
 	(getConfig "nvim-tree.nix")
 	(getConfig "telescope.nix")
-	# (getConfig "toggleterm.nix")
-	# (getConfig "toggleterm.nix")
+	(getConfig "toggleterm.nix")
+	# (getConfig "cmp.nix")
+	# (getConfig "harpoon.nix")
 	(getConfig "lsp.nix")
 	(getConfig "which-key.nix")
 
