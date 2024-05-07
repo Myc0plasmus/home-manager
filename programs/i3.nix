@@ -225,11 +225,12 @@ in
           always = false;
           notification = false;
         }
-		 {
+		{
           command = "exec i3-msg workspace 1";
           always = false;
           notification = false;
         }
+
 
 
 

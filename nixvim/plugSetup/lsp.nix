@@ -46,5 +46,8 @@
 				];
 			};
 		};
+		highlightOverride = {
+			LspInfoBorder.fg = "#ffffff";
+		};
 	};
 }

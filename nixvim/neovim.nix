@@ -8,9 +8,11 @@ in
 	(getConfig "nvim-tree.nix")
 	(getConfig "telescope.nix")
 	(getConfig "toggleterm.nix")
-	# (getConfig "cmp.nix")
+	(getConfig "cmp.nix")
+	(getConfig "luasnip.nix")
+	# (getConfig "lspsaga.nix")
 	# (getConfig "project.nix")
-	(getConfig "nvim-window-picker.nix")
+	# (getConfig "nvim-window-picker.nix")
 	(getConfig "harpoon.nix")
 	(getConfig "lsp.nix")
 	(getConfig "which-key.nix")
@@ -73,7 +75,7 @@ in
 		marks.enable = true;
 		gitsigns.enable = true;
 		nvim-colorizer.enable = true;
-		# hardtime.enable = true;
+		hardtime.enable = true;
 		notify.enable = true;
 	};
   };
