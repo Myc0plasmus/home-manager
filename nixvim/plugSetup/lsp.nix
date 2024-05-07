@@ -5,6 +5,13 @@
 		plugins = {
 			lsp = {
 				enable = true;
+				# onAttach = ''
+				# 	local function lspAttach(client)
+				# 		print('LSP attached')
+				# 		-- Example: Enable completion
+				# 		require'completion'.on_attach(client)
+				# 	end
+				# '';
 				servers = {
 					tsserver.enable = true;	
 					lua-ls.enable = true;	
