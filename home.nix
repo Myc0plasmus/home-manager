@@ -30,6 +30,7 @@ in
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   imports = [
+	./programs/mc.nix
 	./programs/zsh.nix
 	./programs/git.nix
 	./programs/i3.nix

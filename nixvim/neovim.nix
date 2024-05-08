@@ -25,9 +25,9 @@ in
 	extraConfigLua = builtins.readFile ./mappings.lua;
 	clipboard.providers.xclip.enable = true;
 	
-	# colorschemes.ayu.enable = true;
+	# colorschemes.cyberdream.enable = true;
 	colorschemes.base16 ={
-	enable = true;
+		enable = true;
 		# colorscheme = "primer-dark";
 		# my colorscheme
 		colorscheme = {

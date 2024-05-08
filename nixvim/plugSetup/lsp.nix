@@ -28,7 +28,7 @@
 					csharp-ls.enable = true;	
 					kotlin-language-server.enable = true;	
 					pyright.enable = true;	
-					rnix-lsp.enable = true;	
+					# rnix-lsp.enable = true;	
 					
 				};
 				keymaps.diagnostic = {
@@ -45,14 +45,21 @@
 					"<leader>gs" = "signature_help";
 				};
 				keymaps.extra = [
-					{mode = ["n"]; key = "<leader>gd"; action = "require('telescope.builtin').lsp_definitions()"; lua = true;}
-					{mode = ["n"]; key = "<leader>gi"; action = "require('telescope.builtin').lsp_implementations()"; lua = true;}
-					{mode = ["n"]; key = "<leader>go"; action = "require('telescope.builtin').lsp_type_definitions()"; lua = true;}
-  
-					{mode = ["n"]; key = "<leader>gr"; action = "require('telescope.builtin').lsp_references()"; lua = true;}
+					{mode = ["n"]; key = "<leader>gd"; action = "<cmd>Telescope lsp_definitions<cr>"; }
+					{mode = ["n"]; key = "<leader>gi"; action = "<cmd>Telescope lsp_implementations<cr>"; }
+					{mode = ["n"]; key = "<leader>go"; action = "<cmd>Telescope lsp_type_definitions<cr>"; }
+
+					{mode = ["n"]; key = "<leader>gr"; action = "<cmd>Telescope lsp_references<cr>"; }
 				];
 			};
 		};
+		# keymaps = [
+		# 	{mode = ["n"]; key = "<leader>gd"; action = "<cmd>Telescope lsp_definitions<cr>"; }
+		# 	{mode = ["n"]; key = "<leader>gi"; action = "<cmd>Telescope lsp_implementations<cr>"; }
+		# 	{mode = ["n"]; key = "<leader>go"; action = "<cmd>Telescope lsp_type_definitions<cr>"; }
+		#
+		# 	{mode = ["n"]; key = "<leader>gr"; action = "<cmd>Telescope lsp_references<cr>"; }
+		# ];
 		highlightOverride = {
 			LspInfoBorder.fg = "#ffffff";
 		};
