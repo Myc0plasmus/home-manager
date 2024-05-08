@@ -61,6 +61,19 @@ in
 		pkgs.gnome.gdm
 		pkgs.sddm
 		pkgs.ly
+
+		# settings
+		pulsemixer
+		upower
+		pavucontrol
+		xlayoutdisplay
+		xorg.xdpyinfo
+		arandr
+		brightnessctl
+		xdg-user-dirs
+		swaytools
+		swaysettings
+		patray
   ];
   home.file.".config/multilock" = {
 	source = ../dotfiles/multilock;
