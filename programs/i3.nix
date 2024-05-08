@@ -26,41 +26,41 @@ let
 
 in
 {
-  home.packages = [
-        pkgs.dracula-theme
-		pkgs.glib
+  home.packages = with pkgs; [
+        dracula-theme
+		glib
 
 		#terminal emulator
-	    pkgs.kitty
+	    kitty
 
 		#screenshots
-		pkgs.feh
+		feh
 
 		#utils
-		pkgs.xorg.setxkbmap
+		xorg.setxkbmap
 
 		#locking screen
-		pkgs.maim
-		pkgs.xdotool
-		pkgs.xautolock
-		pkgs.multilockscreen
-		pkgs.imagemagick
+		maim
+		xdotool
+		xautolock
+		multilockscreen
+		imagemagick
 
 		#services
-		pkgs.dunst #popup notification
-		pkgs.clipit #clipboard manager applet
-		pkgs.blueman
-		pkgs.bluez
-		pkgs.networkmanager-openvpn
-		pkgs.networkmanagerapplet
-		pkgs.polkit
-		pkgs.playerctl
-		pkgs.zscroll
+		dunst #popup notification
+		clipit #clipboard manager applet
+		blueman
+		bluez
+		networkmanager-openvpn
+		networkmanagerapplet
+		polkit
+		playerctl
+		zscroll
 		
 		#desktop manager
-		pkgs.gnome.gdm
-		pkgs.sddm
-		pkgs.ly
+		gnome.gdm
+		sddm
+		ly
 
 		# settings
 		pulsemixer
