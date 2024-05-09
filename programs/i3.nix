@@ -177,6 +177,15 @@ in
 		"${modifier}+Control+Shift+${Down}" = "move workspace to output down";
 		"${modifier}+Control+Shift+${Up}" = "move workspace to output up";
 
+		"Print" = "exec --no-startup-id maim \"/home/$USER/Pictures/$(date)\"";
+		"$mod+Print" = "exec --no-startup-id maim --window $(xdotool getactivewindow) \"/home/$USER/Pictures/$(date)\"";
+		"Shift+Print" = "exec --no-startup-id maim --select \"/home/$USER/Pictures/$(date)\"";
+
+		## Clipboard Screenshots
+		"Ctrl+Print" = "exec --no-startup-id maim | xclip -selection clipboard -t image/png";
+		"Ctrl+$mod+Print" = "exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png";
+		"Ctrl+Shift+Print" = "exec --no-startup-id maim --select | xclip -selection clipboard -t image/png";
+
 
 		#focus urgent window
 		"${modifier}+x" = "[urgent=latest] focus";
