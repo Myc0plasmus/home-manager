@@ -16,5 +16,11 @@
 			co = "checkout";
 			cm = "commit";
 		};
+		lfs.enable = true;
+		extraConfig = {
+			safe = {
+				directory = "/etc/nixos";
+			};
+		};
 	};
 }
