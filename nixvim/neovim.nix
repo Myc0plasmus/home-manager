@@ -75,7 +75,10 @@ in
 		marks.enable = true;
 		gitsigns.enable = true;
 		nvim-colorizer.enable = true;
-		hardtime.enable = true;
+		hardtime = {
+			enable = true;
+			disableMouse = false;
+		};
 		notify.enable = true;
 	};
   };

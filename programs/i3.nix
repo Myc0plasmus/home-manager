@@ -95,6 +95,10 @@ in
 		{ workspace = "9"; output = sm; }
 		{ workspace = "10"; output = fm; }
 	  ];
+	  gaps = {
+		smartGaps = true;
+		smartBorders = "off";
+	  };
 	  bars = [];
 	  colors = {
         focused = {
