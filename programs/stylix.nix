@@ -25,7 +25,6 @@
 	stylix.targets = {
 		i3.enable = false;
 		nixvim.enable = false;
-		polybar.enable = false;
 		rofi.enable = false;
 	};
 }
