@@ -7,10 +7,10 @@
 				enable = true;
 				autoEnableSources = true;
 				settings = {
-					window = {
-						completion.border= [ "┌" "─" "┐" "│" "┘" "─" "└" "│" ];
-						documentation.border= [ "┌" "─" "┐" "│" "┘" "─" "└" "│" ];
-					};
+					# window = {
+					# 	completion.border= [ "┌" "─" "┐" "│" "┘" "─" "└" "│" ];
+					# 	documentation.border= [ "┌" "─" "┐" "│" "┘" "─" "└" "│" ];
+					# };
 					
 					mapping = {
 					  "<C-b>" = "cmp.mapping.scroll_docs(-4)";
@@ -41,7 +41,7 @@
 							  __raw = "cmp.mapping.preset.cmdline()";
 							};
 							sources = [
-								# {name = "path";}
+								{name = "path";}
 								{name = "cmdline";}
 							];
 						};
