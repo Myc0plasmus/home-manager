@@ -16,9 +16,12 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+	stylix = {
+		url = "github:danth/stylix";
+	};
   };
 
-  outputs = { nixpkgs, home-manager, polybar-spotify, nixvim, ... }@inputs:
+  outputs = { nixpkgs, home-manager, polybar-spotify, nixvim, stylix, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -29,7 +32,7 @@
 		extraSpecialArgs = { inherit inputs; home_username = (import ./user.nix).home_username; };
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ ./home.nix ];
+        modules = [ ./home.nix stylix.homeManagerModules.stylix ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix

@@ -36,6 +36,7 @@ in
 	./programs/i3.nix
 	./programs/polybar.nix
 	./programs/rofi.nix
+	./programs/stylix.nix
 	./nixvim/neovim.nix
 	inputs.nixvim.homeManagerModules.nixvim
   ];
