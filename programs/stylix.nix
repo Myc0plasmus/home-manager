@@ -26,5 +26,10 @@
 		i3.enable = false;
 		nixvim.enable = false;
 		rofi.enable = false;
+		kitty.enable = true;
+	};
+	stylix.cursor = {
+		package = pkgs.phinger-cursors;
+		name = "phinger-cursors-dark";
 	};
 }
