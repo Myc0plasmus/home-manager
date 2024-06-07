@@ -29,7 +29,7 @@
 		kitty.enable = true;
 	};
 	stylix.cursor = {
-		package = pkgs.phinger-cursors;
-		name = "phinger-cursors-dark";
+		package = pkgs.catppuccin-cursors;
+		name = "frappeDark";
 	};
 }
