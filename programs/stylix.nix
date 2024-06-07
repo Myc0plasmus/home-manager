@@ -29,7 +29,7 @@
 		kitty.enable = true;
 	};
 	stylix.cursor = {
-		package = pkgs.catppuccin-cursors;
-		name = "frappeDark";
+		package = pkgs.catppuccin-cursors.frappeDark;
+		name = "catppuccin-cursors-frappeDark";
 	};
 }
