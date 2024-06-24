@@ -1,6 +1,7 @@
 { config,inputs , pkgs, ... }:
 
 {
+	stylix.enable = true;
 	stylix.base16Scheme = {
 			base00 = "#000000";
 			base01 = "#21262d";
