@@ -10,6 +10,7 @@ in
 	(getConfig "toggleterm.nix")
 	(getConfig "cmp.nix")
 	(getConfig "luasnip.nix")
+	(getConfig "hop.nvim")
 	# (getConfig "lspsaga.nix")
 	# (getConfig "project.nix")
 	# (getConfig "nvim-window-picker.nix")
