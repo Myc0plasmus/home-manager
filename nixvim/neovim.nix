@@ -17,7 +17,7 @@ in
 	(getConfig "harpoon.nix")
 	(getConfig "lsp.nix")
 	(getConfig "which-key.nix")
-	(getConfig "noice.nix")
+	# (getConfig "noice.nix")
 
   ];
   programs.nixvim = {
