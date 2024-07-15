@@ -31,26 +31,26 @@
 					# rnix-lsp.enable = true;	
 					
 				};
-				keymaps.diagnostic = {
-					"<space>e" = "open_float";
-					"<space>q" = "setloclist";
-					"[d" = "goto_prev";
-					"]d" = "goto_next";
-									};
-				keymaps.lspBuf = {
-					"K" = "hover";
-					"<space>ca" = "code_action";
-					"<leader>gD" = "declaration";
-					"<leader>rn" = "rename";
-					"<leader>gs" = "signature_help";
-				};
-				keymaps.extra = [
-					{mode = ["n"]; key = "<leader>gd"; action = "<cmd>Telescope lsp_definitions<cr>"; }
-					{mode = ["n"]; key = "<leader>gi"; action = "<cmd>Telescope lsp_implementations<cr>"; }
-					{mode = ["n"]; key = "<leader>go"; action = "<cmd>Telescope lsp_type_definitions<cr>"; }
-
-					{mode = ["n"]; key = "<leader>gr"; action = "<cmd>Telescope lsp_references<cr>"; }
-				];
+				# keymaps.diagnostic = {
+				# 	"<space>e" = "open_float";
+				# 	"<space>q" = "setloclist";
+				# 	"[d" = "goto_prev";
+				# 	"]d" = "goto_next";
+				# 					};
+				# keymaps.lspBuf = {
+				# 	"K" = "hover";
+				# 	"<space>ca" = "code_action";
+				# 	"<leader>gD" = "declaration";
+				# 	"<leader>rn" = "rename";
+				# 	"<leader>gs" = "signature_help";
+				# };
+				# keymaps.extra = [
+				# 	{mode = ["n"]; key = "<leader>gd"; action = "<cmd>Telescope lsp_definitions<cr>"; }
+				# 	{mode = ["n"]; key = "<leader>gi"; action = "<cmd>Telescope lsp_implementations<cr>"; }
+				# 	{mode = ["n"]; key = "<leader>go"; action = "<cmd>Telescope lsp_type_definitions<cr>"; }
+				#
+				# 	{mode = ["n"]; key = "<leader>gr"; action = "<cmd>Telescope lsp_references<cr>"; }
+				# ];
 			};
 		};
 		# keymaps = [

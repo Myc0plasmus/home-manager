@@ -11,7 +11,7 @@ in
 	(getConfig "cmp.nix")
 	(getConfig "luasnip.nix")
 	(getConfig "hop.nix")
-	# (getConfig "lspsaga.nix")
+	(getConfig "lspsaga.nix")
 	# (getConfig "project.nix")
 	# (getConfig "nvim-window-picker.nix")
 	(getConfig "harpoon.nix")
