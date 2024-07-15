@@ -10,13 +10,14 @@ in
 	(getConfig "toggleterm.nix")
 	(getConfig "cmp.nix")
 	(getConfig "luasnip.nix")
-	(getConfig "hop.nvim")
+	(getConfig "hop.nix")
 	# (getConfig "lspsaga.nix")
 	# (getConfig "project.nix")
 	# (getConfig "nvim-window-picker.nix")
 	(getConfig "harpoon.nix")
 	(getConfig "lsp.nix")
 	(getConfig "which-key.nix")
+	(getConfig "noice.nix")
 
   ];
   programs.nixvim = {
@@ -72,7 +73,7 @@ in
 	plugins = {
 		lualine.enable = true;
 		comment.enable = true;
-		# treesitter.enable = true;
+		treesitter.enable = true;
 		marks.enable = true;
 		gitsigns.enable = true;
 		nvim-colorizer.enable = true;
