@@ -9,6 +9,9 @@
 					"<leader>ff" = {mode = ["n"]; action = "find_files";};
 					"<leader>fg" = {mode = ["n"]; action = "live_grep";};
 					"<leader>fb" = {mode = ["n"]; action = "buffers";};
+					"<leader>gs" = {mode = ["n"]; action = "git_status";};
+					"<leader>gb" = {mode = ["n"]; action = "git_branches";};
+					"<leader>gc" = {mode = ["n"]; action = "git_commits";};
 				};
 				settings = {
 					defaults = {

@@ -47,6 +47,7 @@ in
 	monitorScript
 	batteryScript
 	launchPolybar
+	pkgs.ripgrep
 	pkgs.brave
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
