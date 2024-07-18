@@ -7,10 +7,15 @@ in
 {
 	programs.nixvim = {
 		extraPlugins = with pkgs.vimPlugins; [
+			asyncrun-vim
+			asynctasks-vim
 			{
-				plugin = overseer-nvim;
-				config = toLuaFile ./overseer_config.lua;
+				plugin = telescope-asynctask-nvim;
 			}
 		];
+		keymaps = [
+			{mode = ["n"]; key = "<leader>rt"; action = "<cmd>Telescope asynctasks all<cr>"; }
+		];
+
 	};
 }

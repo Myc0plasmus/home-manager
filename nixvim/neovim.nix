@@ -17,6 +17,7 @@ in
 	(getConfig "harpoon.nix")
 	(getConfig "lsp.nix")
 	(getConfig "which-key.nix")
+	(getConfig "asynctasks.nix")
 	# (getConfig "overseer.nix")
 	# (getConfig "noice.nix")
 
