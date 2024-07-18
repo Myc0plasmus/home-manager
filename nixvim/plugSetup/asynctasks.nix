@@ -10,7 +10,7 @@ in
 			asyncrun-vim
 			asynctasks-vim
 			{
-				plugin = telescope-asynctask-nvim;
+				plugin = telescope-asynctasks-nvim;
 			}
 		];
 		keymaps = [

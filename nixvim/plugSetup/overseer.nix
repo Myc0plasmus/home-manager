@@ -13,4 +13,7 @@ in
 			}
 		];
 	};
+	# keymaps = [
+	# 	{mode = ["n"]; key = "<leader>rt"; action = "<cmd>Telescope asynctasks all<cr>"; }
+	# ];
 }
