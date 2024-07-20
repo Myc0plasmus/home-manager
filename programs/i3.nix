@@ -53,6 +53,7 @@ in
 		bluez
 		networkmanager-openvpn
 		networkmanagerapplet
+		polkit_gnome
 		polkit
 		playerctl
 		zscroll

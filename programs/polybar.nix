@@ -3,6 +3,8 @@
 {
 	home.packages = [
 		pkgs.killall
+		pkgs.font-awesome
+		pkgs.papirus-icon-theme
 	];
 	services.polybar = {
 		enable = true;

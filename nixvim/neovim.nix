@@ -22,6 +22,19 @@ in
 	# (getConfig "noice.nix")
 
   ];
+  home.packages = with pkgs; [
+	zip
+	unzip
+	ripgrep
+	go 
+	cargo
+	lua
+	luajit
+	luajitPackages.luacheck
+	stylua
+	gcc
+	gnumake
+  ];
   programs.nixvim = {
 	enable = true;
 	enableMan = true;
