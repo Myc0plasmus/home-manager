@@ -20,6 +20,7 @@
 		extraConfig = {
 			safe = {
 				directory = "/etc/nixos";
+				directory = "/etc/nixos/.git";
 			};
 		};
 	};
