@@ -19,8 +19,10 @@
 		lfs.enable = true;
 		extraConfig = {
 			safe = {
-				directory = "/etc/nixos";
-				directory = "/etc/nixos/.git";
+				directory =  [ 
+				  "/etc/nixos"
+				  "/etc/nixos/.git"
+				];
 			};
 		};
 	};
