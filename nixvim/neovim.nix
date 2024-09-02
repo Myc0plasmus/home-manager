@@ -18,6 +18,7 @@ in
 	(getConfig "lsp.nix")
 	(getConfig "which-key.nix")
 	(getConfig "asynctasks.nix")
+	(getConfig "suda.nix")
 	# (getConfig "overseer.nix")
 	# (getConfig "noice.nix")
 
