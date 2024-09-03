@@ -36,6 +36,9 @@ in
 	# gcc
 	# gnumake
  #  ];
+  home.packages = with pkgs; [
+	lazygit
+  ];
   programs.nixvim = {
 	enable = true;
 	enableMan = true;
