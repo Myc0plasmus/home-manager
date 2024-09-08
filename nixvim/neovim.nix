@@ -44,6 +44,7 @@ in
 	enableMan = true;
 	extraConfigLuaPre = builtins.readFile ./options.lua;
 	extraConfigLua = builtins.readFile ./mappings.lua;
+	extraConfigLuaPost = builtins.readFile ./additionalPluginConfig.lua;
 	clipboard.providers.xclip.enable = true;
 	
 	# colorschemes.cyberdream.enable = true;
