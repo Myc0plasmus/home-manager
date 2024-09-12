@@ -59,7 +59,7 @@ in
 		zscroll
 		
 		#desktop manager
-		gnome.gdm
+		gdm
 		sddm
 		ly
 

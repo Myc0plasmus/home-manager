@@ -99,7 +99,7 @@ in
 		nvim-colorizer.enable = true;
 		hardtime = {
 			enable = true;
-			disableMouse = false;
+			settings.disable_mouse = false;
 		};
 		notify.enable = true;
 	};
