@@ -5,7 +5,7 @@
 	plugins = {
 	  which-key = {
 		enable = true;
-		triggersBlackList = {
+		settings.triggersBlackList = {
 			i = [
 			  ";"
 			  "\\"
