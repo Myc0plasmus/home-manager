@@ -20,7 +20,6 @@
 	  url = "github:/polybar/polybar-scripts";
 	  flake = false;
 	};
-
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -30,7 +29,7 @@
 	};
   };
 
-  outputs = { nixpkgs, home-manager, polybar-spotify, nixvim, stylix, ... }@inputs:
+  outputs = { nixpkgs, home-manager, polybar-spotify, polybar-scripts, polybar-calendar, nixvim, stylix, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
