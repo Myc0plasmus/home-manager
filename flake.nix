@@ -12,6 +12,15 @@
 	  url = "github:PrayagS/polybar-spotify";
 	  flake = false;
 	};
+	polybar-calendar = {
+	  url = "github:nevarman/polybar-calendar";
+	  flake = false;
+	};
+	polybar-scripts = {
+	  url = "github:/polybar/polybar-scripts";
+	  flake = false;
+	};
+
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";

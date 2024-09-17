@@ -72,6 +72,8 @@ in
   home.file = {
 	".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
 	".config/polybar-spotify".source = inputs.polybar-spotify;
+	".config/polybar-calendar".source = inputs.polybar-calendar;
+	".config/polybar-scripts".source = inputs.polybar-scripts;
 
 	#linking those scripts to .local/bin doesn't seem to put them in path
 	# ".local/bin/lockscript".source = "${lockscript}/bin/lockscript";
