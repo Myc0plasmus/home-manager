@@ -37,7 +37,7 @@
       homeConfigurations."${(import ./user.nix).home_username}" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 		
-		extraSpecialArgs = { inherit inputs; home_username = (import ./user.nix).home_username; };
+		extraSpecialArgs = { inherit inputs; home_username = (import ./user.nix).home_username; dev = (import ./user.nix).home_username; };
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [ ./home.nix stylix.homeManagerModules.stylix ];

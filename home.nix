@@ -1,4 +1,4 @@
-{home_username, inputs, config, pkgs, lib, ... }:
+{home_username, inputs,dev , config, pkgs, lib, ... }:
 
 let
   # dotfilesDerivation = pkgs.stdenv.mkDerivation {
@@ -109,6 +109,7 @@ in
   #
   home.sessionVariables = {
     EDITOR = "nvim";
+	DEVICE_NAME = dev;
   };
 
   # Let Home Manager install and manage itself.

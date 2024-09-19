@@ -13,7 +13,7 @@
 				# 	end
 				# '';
 				servers = {
-					tsserver.enable = true;	
+					ts-ls.enable = true;	
 					lua-ls.enable = true;	
 					rust-analyzer = {
 						enable = true;	
