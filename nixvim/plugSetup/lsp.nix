@@ -28,7 +28,8 @@
 					csharp_ls.enable = true;	
 					kotlin_language_server.enable = true;	
 					pyright.enable = true;	
-					rnix_lsp.enable = true;	
+					rnix.enable = true;	
+					r_language_server.enable = true;	
 					
 				};
 				# keymaps.diagnostic = {
