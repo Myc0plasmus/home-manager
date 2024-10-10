@@ -102,6 +102,7 @@ in
 			settings.disable_mouse = false;
 		};
 		notify.enable = true;
+		web-devicons.enable = true;
 	};
   };
 }
