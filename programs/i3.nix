@@ -163,7 +163,7 @@ in
 		"${modifier}+Ctrl+f" = "exec rofi -show filebrowser";
 
 		#Start window
-		"${modifier}+Ctrl+w" = "exec rofi -show window";
+		"${modifier}+Space" = "exec rofi -show window";
 		
 		#Start ssh
 		"${modifier}+Ctrl+s" = "exec rofi -show ssh";
@@ -204,6 +204,13 @@ in
         "${modifier}+${Down}" = "focus down";
         "${modifier}+${Up}" = "focus up";
         "${modifier}+${Right}" = "focus right";
+
+		#move windows with hjkl
+        "${modifier}+Shift+${Left}" = "move left";
+        "${modifier}+Shift+${Down}" = "move down";
+        "${modifier}+Shift+${Up}" = "move up";
+        "${modifier}+Shift+${Right}" = "move right";
+
 
 	  };
       startup = [
@@ -258,12 +265,12 @@ in
           notification = false;
         }
       ];
-	 #  fonts = {
-	 #    names = [
-  #         "monospace"
-		# ];
-		# size = 0.0;
-	 #  };
+	  fonts = {
+	    names = [
+          "monospace"
+		];
+		size = 0.0;
+	  };
     };
   };
 }
