@@ -13,9 +13,9 @@
 				# 	end
 				# '';
 				servers = {
-					ts-ls.enable = true;	
-					lua-ls.enable = true;	
-					rust-analyzer = {
+					ts_ls.enable = true;	
+					lua_ls.enable = true;	
+					rust_analyzer = {
 						enable = true;	
 						installCargo = true;
 						installRustc = true;
@@ -25,11 +25,11 @@
 					jsonls.enable = true;	
 					html.enable = true;	
 					cmake.enable = true;	
-					csharp-ls.enable = true;	
-					kotlin-language-server.enable = true;	
+					csharp_ls.enable = true;	
+					kotlin_language_server.enable = true;	
 					pyright.enable = true;	
 					# rnix.enable = true;	
-					r-language-server.enable = true;	
+					r_language_server.enable = true;	
 					
 				};
 				# keymaps.diagnostic = {
