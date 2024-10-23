@@ -163,7 +163,7 @@ in
 		"${modifier}+Ctrl+f" = "exec rofi -show filebrowser";
 
 		#Start window
-		"${modifier}+;" = "exec rofi -show window";
+		"${modifier}+n" = "exec rofi -show window";
 		
 		#Start ssh
 		"${modifier}+Ctrl+s" = "exec rofi -show ssh";
