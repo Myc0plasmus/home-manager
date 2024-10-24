@@ -8,7 +8,10 @@ in
 	programs.nixvim = {
 		extraPlugins = with pkgs.vimPlugins; [
 			asyncrun-vim
-			asynctasks-vim
+			{
+				plugin = asynctasks-vim;
+				config =  toLuaFile ./asynctasks_config.lua;
+			}
 			{
 				plugin = telescope-asynctasks-nvim;
 			}
