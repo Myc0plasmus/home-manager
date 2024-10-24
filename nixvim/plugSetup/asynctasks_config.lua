@@ -5,4 +5,4 @@ vim.api.nvim_exec([[
 
 	let g:asyncrun_runner = get(g:, 'asyncrun_runner', {})
 	let g:asyncrun_runner.test = function('s:my_toggleterm')
-]])
+]], false)
