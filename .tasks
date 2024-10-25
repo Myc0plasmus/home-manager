@@ -7,7 +7,7 @@
 # shell command, use quotation for filenames containing spaces
 # check ":AsyncTaskMacro" to see available macros
 # command="home-manager switch --flake .#test"
-command=echo "Well done!!!"
+command=sleep 2 && echo "Well done"
 
 # working directory, can change to $(VIM_ROOT) for project root
 cwd=$(VIM_ROOT)
@@ -16,7 +16,7 @@ cwd=$(VIM_ROOT)
 # - quickfix: output to quickfix window
 # - terminal: run the command in the internal terminal
 output=terminal
-pos=my_toggleterm
+pos=toggleterm_satelite
 
 # this is for output=quickfix only
 # if it is omitted, vim's current errorformat will be used.
