@@ -103,6 +103,10 @@ in
 		};
 		notify.enable = true;
 		web-devicons.enable = true;
+		oil = {
+			enable = true;
+			luaConfig.post = builtins.readFile ./plugSetup/oil.lua;
+		};
 	};
   };
 }
