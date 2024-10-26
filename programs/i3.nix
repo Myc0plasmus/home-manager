@@ -265,12 +265,12 @@ in
           notification = false;
         }
       ];
-	  fonts = {
-	    names = [
-          "monospace"
-		];
-		size = 0.0;
-	  };
+	 #  fonts = {
+	 #    names = [
+  #         "monospace"
+		# ];
+		# size = 0.0;
+	 #  };
     };
   };
 }
