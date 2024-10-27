@@ -31,7 +31,10 @@
 					# rnix.enable = true;	
 
 					# you have to define a package, it seems - I was lazy and I don't think I am going to be using R any time soon anyway
-					# r_language_server.enable = true;	
+					r_language_server = {
+						enable = true;
+						package = null;
+					};
 					
 				};
 				# keymaps.diagnostic = {
