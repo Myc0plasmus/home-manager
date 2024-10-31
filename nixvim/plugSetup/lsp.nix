@@ -4,6 +4,7 @@
 	home.packages = with pkgs; [
 		nixfmt-rfc-style
 	];
+	nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 	programs.nixvim = {
 		plugins = {
 			lsp = {
@@ -37,7 +38,6 @@
 							formatting.command = [
 								"nixfmt"
 							]; 
-							nixpkgs = inputs.nixpkgs;
 						};
 					};
 
