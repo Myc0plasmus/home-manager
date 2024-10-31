@@ -51,6 +51,13 @@ in
     extraConfigLua = builtins.readFile ./mappings.lua;
     extraConfigLuaPost = builtins.readFile ./additionalPluginConfig.lua;
     clipboard.providers.xclip.enable = true;
+	extraFiles = {
+      "ftplugin/nix.lua".text = ''
+        vim.opt.tabstop = 2
+        vim.opt.shiftwidth = 2
+        vim.opt.expandtab = true
+        '';
+    };
 
     # colorschemes.cyberdream.enable = true;
     colorschemes.base16 = {
