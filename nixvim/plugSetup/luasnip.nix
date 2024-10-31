@@ -1,9 +1,14 @@
-{ config,inputs , pkgs, ... }:
+{
+  config,
+  inputs,
+  pkgs,
+  ...
+}:
 
 {
-	programs.nixvim = {
-		plugins = {
-			luasnip.enable = true;
-		};
-	};
+  programs.nixvim = {
+    plugins = {
+      luasnip.enable = true;
+    };
+  };
 }

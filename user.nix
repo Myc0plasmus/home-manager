@@ -1,3 +1,3 @@
 {
-	home_username = "test";
+  home_username = "test";
 }

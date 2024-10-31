@@ -1,18 +1,26 @@
-{home_username, inputs,dev , config, pkgs, lib, ... }:
+{
+  home_username,
+  inputs,
+  dev,
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 let
   # dotfilesDerivation = pkgs.stdenv.mkDerivation {
-		# name =  "${myVar}";
-		# src = ./dotfiles; 
-		# buildCommand = ''
-		#   mkdir -p $out/
-		#   cp -r $src/* $out/
-		# '';
+  # name =  "${myVar}";
+  # src = ./dotfiles; 
+  # buildCommand = ''
+  #   mkdir -p $out/
+  #   cp -r $src/* $out/
+  # '';
   # };
-  lockscript = import ./scripts/lockscript.nix {inherit pkgs;};
-  monitorScript = import ./scripts/monitorScript.nix {inherit pkgs;};
-  batteryScript = import ./scripts/batteryScript.nix {inherit pkgs;};
-  launchPolybar = import ./scripts/launchPolybar.nix {inherit pkgs;};
+  lockscript = import ./scripts/lockscript.nix { inherit pkgs; };
+  monitorScript = import ./scripts/monitorScript.nix { inherit pkgs; };
+  batteryScript = import ./scripts/batteryScript.nix { inherit pkgs; };
+  launchPolybar = import ./scripts/launchPolybar.nix { inherit pkgs; };
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -30,25 +38,25 @@ in
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   imports = [
-	./programs/mc.nix
-	./programs/zsh.nix
-	./programs/git.nix
-	./programs/i3.nix
-	./programs/polybar.nix
-	./programs/rofi.nix
-	./programs/stylix.nix
-	./nixvim/neovim.nix
-	inputs.nixvim.homeManagerModules.nixvim
+    ./programs/mc.nix
+    ./programs/zsh.nix
+    ./programs/git.nix
+    ./programs/i3.nix
+    ./programs/polybar.nix
+    ./programs/rofi.nix
+    ./programs/stylix.nix
+    ./nixvim/neovim.nix
+    inputs.nixvim.homeManagerModules.nixvim
   ];
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-	lockscript
-	monitorScript
-	batteryScript
-	launchPolybar
-	pkgs.ripgrep
-	pkgs.brave
+    lockscript
+    monitorScript
+    batteryScript
+    launchPolybar
+    pkgs.ripgrep
+    pkgs.brave
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -70,16 +78,16 @@ in
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
-	".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
-	".config/polybar-spotify".source = inputs.polybar-spotify;
-	".config/polybar-calendar".source = inputs.polybar-calendar;
-	".config/polybar-scripts".source = inputs.polybar-scripts;
+    ".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
+    ".config/polybar-spotify".source = inputs.polybar-spotify;
+    ".config/polybar-calendar".source = inputs.polybar-calendar;
+    ".config/polybar-scripts".source = inputs.polybar-scripts;
 
-	#linking those scripts to .local/bin doesn't seem to put them in path
-	# ".local/bin/lockscript".source = "${lockscript}/bin/lockscript";
-	# ".local/bin/monitorScript".source = "${monitorScript}/bin/monitorScript";
-	# ".local/bin/batteryScript".source = "${batteryScript}/bin/batteryScript";
-	# ".local/bin/launchPolybar".source = "${launchPolybar}/bin/launchPolybar";
+    #linking those scripts to .local/bin doesn't seem to put them in path
+    # ".local/bin/lockscript".source = "${lockscript}/bin/lockscript";
+    # ".local/bin/monitorScript".source = "${monitorScript}/bin/monitorScript";
+    # ".local/bin/batteryScript".source = "${batteryScript}/bin/batteryScript";
+    # ".local/bin/launchPolybar".source = "${launchPolybar}/bin/launchPolybar";
     # Building this configuration will create a copy of 'dotfiles/screenrc' in
     # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # symlink to the Nix store copy.
@@ -109,7 +117,7 @@ in
   #
   home.sessionVariables = {
     EDITOR = "nvim";
-	DEVICE_NAME = dev;
+    DEVICE_NAME = dev;
   };
 
   # Let Home Manager install and manage itself.
