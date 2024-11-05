@@ -8,6 +8,7 @@
 {
   home.packages = with pkgs; [
     nixfmt-rfc-style
+    rPackages.languageserver
   ];
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
   programs.nixvim = {
@@ -49,7 +50,7 @@
           # you have to define a package, it seems - I was lazy and I don't think I am going to be using R any time soon anyway
           r_language_server = {
             enable = true;
-            package = pkgs.rPackages.languageserver;
+            package = pkgs.r_languageserver;
           };
 
         };
