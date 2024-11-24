@@ -38,7 +38,25 @@
           csharp_ls.enable = true;
           kotlin_language_server.enable = true;
           # pyright.enable = true;
-          pylsp.enable = true;
+          # pylsp = {
+          #   enable = true;
+          #   settings = {
+          #     plugins = {
+          #       jedi = {
+          #         enable = true;
+          #         autoImportModule = [
+          #           "numpy"
+          #           "pandas"
+          #           "matplotlib"
+          #           "Bio"
+          #           "scipy"
+          #         ];
+          #       };
+          #         
+          #     };
+          #   };
+          # };
+          pylyzer.enable = true;
           # nil-ls.enable = true;
           nixd = {
             enable = true;
