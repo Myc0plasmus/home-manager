@@ -27,11 +27,11 @@
           };
           sources = [
             { name = "nvim_lsp"; }
-            { name = "path"; }
-            { name = "luasnip"; }
-            { name = "buffer"; }
-            { name = "cmp-tabnine"; }
             { name = "treesitter"; }
+            { name = "luasnip"; }
+            { name = "cmp-tabnine"; }
+            { name = "buffer"; }
+            { name = "path"; }
           ];
         };
         cmdline = {
