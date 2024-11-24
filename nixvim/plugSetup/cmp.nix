@@ -30,6 +30,8 @@
             { name = "path"; }
             { name = "luasnip"; }
             { name = "buffer"; }
+            { name = "cmp-tabnine"; }
+            { name = "treesitter"; }
           ];
         };
         cmdline = {

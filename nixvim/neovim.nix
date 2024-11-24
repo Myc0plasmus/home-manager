@@ -25,6 +25,7 @@ in
     (getConfig "asynctasks.nix")
     (getConfig "suda.nix")
     (getConfig "trouble.nix")
+    (getConfig "spectre.nix")
     # (getConfig "overseer.nix")
     # (getConfig "noice.nix")
 

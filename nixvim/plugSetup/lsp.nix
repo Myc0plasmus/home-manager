@@ -37,7 +37,9 @@
           cmake.enable = true;
           csharp_ls.enable = true;
           kotlin_language_server.enable = true;
-          pyright.enable = true;
+          # pyright.enable = true;
+          pylsp.enable = true;
+          # nil-ls.enable = true;
           nixd = {
             enable = true;
             settings = {
