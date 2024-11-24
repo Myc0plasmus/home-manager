@@ -24,6 +24,7 @@ in
     (getConfig "which-key.nix")
     (getConfig "asynctasks.nix")
     (getConfig "suda.nix")
+    (getConfig "trouble.nix")
     # (getConfig "overseer.nix")
     # (getConfig "noice.nix")
 
