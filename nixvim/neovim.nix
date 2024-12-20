@@ -110,7 +110,7 @@ in
       treesitter.enable = true;
       marks.enable = true;
       gitsigns.enable = true;
-      nvim-colorizer.enable = true;
+      colorizer.enable = true;
       hardtime = {
         enable = true;
         settings.disable_mouse = false;
