@@ -7,7 +7,7 @@
     pkgs.rofi-bluetooth
     pkgs.rofi-power-menu
     pkgs.rofi-pulse-select
-    pkgs.rofi-file-browser
+    # pkgs.rofi-file-browser
     pkgs.rofi-systemd
     pkgs.networkmanager_dmenu
   ];
@@ -19,7 +19,7 @@
       pkgs.rofi-bluetooth
       pkgs.rofi-power-menu
       pkgs.rofi-pulse-select
-      pkgs.rofi-file-browser
+      # pkgs.rofi-file-browser
       pkgs.rofi-systemd
       pkgs.networkmanager_dmenu
     ];
