@@ -67,7 +67,7 @@ in
 
     #desktop manager
     gdm
-    sddm
+    # sddm
     ly
 
     # settings
