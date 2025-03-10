@@ -24,7 +24,7 @@ let
   wh = "#ffffff";
 
   # vars
-  fm = "eDP-1";
+  fm = "None-1";
   sm = "HDMI-1";
   Left = "h";
   Down = "j";
@@ -34,6 +34,7 @@ let
 in
 {
   home.packages = with pkgs; [
+    rot8
     dracula-theme
     glib
 
@@ -255,6 +256,11 @@ in
           notification = false;
         }
         {
+          command = "rot8 --touchscreen \"Wacom HID 5334 Finger\"";
+          always = false;
+          notification = false;
+        }
+        {
           command = "feh --bg-scale $HOME/.config/user-wallpapers/wp12329536-nixos-wallpapers.png"; # bg color: #1d1f27
           always = true;
           notification = false;
@@ -290,7 +296,7 @@ in
           notification = false;
         }
         {
-          command = "multiscreenlock -u $HOME/.config/user-wallpapers/lockscreen.png";
+          command = "multilockscreen -u $HOME/.config/user-wallpapers/lockscreen.png";
           always = false;
           notification = false;
         }
