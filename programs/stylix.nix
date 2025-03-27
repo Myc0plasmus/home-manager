@@ -37,6 +37,6 @@
   stylix.cursor = {
     package = pkgs.catppuccin-cursors.frappeDark;
     name = "catppuccin-frappe-dark-cursors";
-    size = 35;
+    size = 25;
   };
 }
