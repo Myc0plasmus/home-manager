@@ -8,7 +8,7 @@
 {
   programs.nixvim = {
     plugins = {
-      harpoon = {
+      harpoon2 = {
         enable = true;
         enableTelescope = true;
         keymaps = {
