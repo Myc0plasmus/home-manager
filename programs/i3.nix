@@ -272,7 +272,7 @@ in
           notification = false;
         }
         {
-          command = "xidlehook --once --not-when-audio --not-when-fullscreen --timer 10 'lockscript' ''";
+          command = "xidlehook --not-when-audio --not-when-fullscreen --timer 900 'lockscript' ''";
           always = true;
           notification = false;
         }
