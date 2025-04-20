@@ -277,6 +277,11 @@ in
           notification = false;
         }
         {
+          command = "xset s off -dpms s noblank"; #so that screen doesn't go blank when watching movies/playing games
+          always = true;
+          notification = false;
+        }
+        {
           command = "xdg-user-dirs-update";
           always = false;
           notification = false;
