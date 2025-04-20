@@ -51,7 +51,7 @@ in
     maim
     xdotool
     xautolock
-    xidlehook #technically perfect but doesn't work as advertised
+    xidlehook #technically perfect but doesn't work as advertised (well it does, I just applied the fix)
     multilockscreen
     imagemagick
 
@@ -272,7 +272,7 @@ in
           notification = false;
         }
         {
-          command = "xautolock -time 15 -locker 'lockscript' -corners 000-";
+          command = "xidlehook --once --not-when-audio --not-when-fullscreen --timer 10 'lockscript' ''";
           always = true;
           notification = false;
         }
