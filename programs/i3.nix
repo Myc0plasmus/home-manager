@@ -273,7 +273,7 @@ in
         }
         {
           command = "xidlehook --not-when-audio --not-when-fullscreen --timer 900 'lockscript' ''";
-          always = true;
+          always = false;
           notification = false;
         }
         {
