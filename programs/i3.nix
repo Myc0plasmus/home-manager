@@ -53,7 +53,6 @@ in
     xautolock
     xidlehook #technically perfect but doesn't work as advertised (well it does, I just applied the fix)
     betterlockscreen
-    lightlocker
     imagemagick
 
     #services
