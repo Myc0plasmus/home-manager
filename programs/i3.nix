@@ -85,8 +85,8 @@ in
     swaysettings
     patray
   ];
-  home.file.".config/multilock" = {
-    source = ../dotfiles/multilock;
+  home.file.".config/betterlock" = {
+    source = ../dotfiles/betterlockscreen;
     # target = ".config/dotfiles";
     # directory = true;
   };
