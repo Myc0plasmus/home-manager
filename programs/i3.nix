@@ -52,7 +52,7 @@ in
     xdotool
     xautolock
     xidlehook #technically perfect but doesn't work as advertised (well it does, I just applied the fix)
-    multilockscreen
+    betterlockscreen
     imagemagick
 
     #services
@@ -302,7 +302,7 @@ in
           notification = false;
         }
         {
-          command = "multilockscreen -u $HOME/.config/user-wallpapers/lockscreen.png";
+          command = "betterlockscreen -u $HOME/.config/user-wallpapers/lockscreen.png";
           always = false;
           notification = false;
         }
