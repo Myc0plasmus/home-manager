@@ -5,7 +5,7 @@
     #shells
     pkgs.zsh
     pkgs.oh-my-zsh
-    pkgs.thefuck
+    pkgs.pay-respects
     pkgs.fzf
 
     #terminal utils
