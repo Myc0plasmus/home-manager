@@ -252,7 +252,7 @@ in
       };
       startup = [
         {
-          command = "monitorScript && sleep 1 && launchPolybar";
+          command = "monitorScript && sleep 2 && launchPolybar";
           always = true;
           notification = false;
         }
