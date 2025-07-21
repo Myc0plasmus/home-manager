@@ -26,7 +26,6 @@
       theme = "mh";
       plugins = [
         "git"
-        "pay-respects"
         "docker"
         "kubectl"
       ];
