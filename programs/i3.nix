@@ -76,7 +76,7 @@ in
     pulsemixer
     upower
     pavucontrol
-    xlayoutdisplay
+    # xlayoutdisplay #started to break on install
     xorg.xdpyinfo
     arandr
     brightnessctl
