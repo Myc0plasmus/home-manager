@@ -59,7 +59,7 @@
             # the path to your home.nix.
             modules = [
               ./home.nix
-              stylix.homeManagerModules.stylix
+              stylix.homeModules.stylix
             ];
 
             # Optionally use extraSpecialArgs
