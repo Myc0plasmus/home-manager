@@ -24,6 +24,7 @@
           	end
             '';
         options.remap = true;
+        options.silent = true;
       }
       {
         key = "F";
