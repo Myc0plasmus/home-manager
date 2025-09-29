@@ -15,58 +15,57 @@
     keymaps = [
       {
         key = "f";
-        action.__raw = ''
-            function()
-              local ok, err = pcall(function()
-                require('hop').hint_char1 {
-                  direction = require('hop.hint').HintDirection.AFTER_CURSOR,
-                  current_line_only = true,
-                }
-              end)
-              if not ok then
-                vim.notify("Hop mapping error: " .. tostring(err), vim.log.levels.WARN)
-              end
-            end
-            '';
+        # generates weird prompts for some reason
+        # action.__raw = ''
+        #   	function()
+        #   	  require'hop'.hint_char1({
+        #   		direction = require'hop.hint'.HintDirection.AFTER_CURSOR,
+        #   		current_line_only = true
+        #   	  })
+        #   	end
+        #     '';
+        action = "<cmd>lua require('hop').hint_char1({ direction = require('hop.hint').HintDirection.AFTER_CURSOR, current_line_only = true })<CR>";
         options.remap = true;
-        options.silent = true;
       }
       {
         key = "F";
-        action.__raw = ''
-          	function()
-          	  require'hop'.hint_char1({
-          		direction = require'hop.hint'.HintDirection.BEFORE_CURSOR,
-          		current_line_only = true
-          	  })
-          	end
-            '';
+        # action.__raw = ''
+        #   	function()
+        #   	  require'hop'.hint_char1({
+        #   		direction = require'hop.hint'.HintDirection.BEFORE_CURSOR,
+        #   		current_line_only = true
+        #   	  })
+        #   	end
+        #     '';
+        action = "<cmd>lua require('hop').hint_char1({ direction = require('hop.hint').HintDirection.BEFORE_CURSOR, current_line_only = true })<CR>";
         options.remap = true;
       }
       {
         key = "t";
-        action.__raw = ''
-          	function()
-          	  require'hop'.hint_char1({
-          		direction = require'hop.hint'.HintDirection.AFTER_CURSOR,
-          		current_line_only = true,
-          		hint_offset = -1
-          	  })
-          	end
-            '';
+        # action.__raw = ''
+        #   	function()
+        #   	  require'hop'.hint_char1({
+        #   		direction = require'hop.hint'.HintDirection.AFTER_CURSOR,
+        #   		current_line_only = true,
+        #   		hint_offset = -1
+        #   	  })
+        #   	end
+        #     '';
+        action = "<cmd>lua require('hop').hint_char1({ direction = require('hop.hint').HintDirection.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })<CR>";
         options.remap = true;
       }
       {
         key = "T";
-        action.__raw = ''
-          	function()
-          	  require'hop'.hint_char1({
-          		direction = require'hop.hint'.HintDirection.BEFORE_CURSOR,
-          		current_line_only = true,
-          		hint_offset = 1
-          	  })
-          	end
-            '';
+        # action.__raw = ''
+        #   	function()
+        #   	  require'hop'.hint_char1({
+        #   		direction = require'hop.hint'.HintDirection.BEFORE_CURSOR,
+        #   		current_line_only = true,
+        #   		hint_offset = 1
+        #   	  })
+        #   	end
+        #     '';
+        action = "<cmd>lua require('hop').hint_char1({ direction = require('hop.hint').HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = -1 })<CR>";
         options.remap = true;
       }
 
