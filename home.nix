@@ -21,6 +21,7 @@ let
   monitorScript = import ./scripts/monitorScript.nix { inherit pkgs; };
   batteryScript = import ./scripts/batteryScript.nix { inherit pkgs; };
   launchPolybar = import ./scripts/launchPolybar.nix { inherit pkgs; };
+  resetWallpaperLock = import ./scripts/resetWallpaperLock.nix { inherit pkgs; };
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -55,6 +56,7 @@ in
     monitorScript
     batteryScript
     launchPolybar
+    resetWallpaperLock
     pkgs.ripgrep
     pkgs.brave
     # # Adds the 'hello' command to your environment. It prints a friendly
