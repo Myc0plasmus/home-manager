@@ -57,7 +57,7 @@
             home_username = username;
             dev = deviceName;
           };
-          home-manager.users."${username}" = modules;
+          home-manager.users."${username}" = home;
 
       };
     #   homeConfigurations."${(import ./user.nix).home_username}" =
