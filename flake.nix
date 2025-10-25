@@ -44,9 +44,6 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
       home = import ./home.nix;
-      modules = [
-        home
-      ];
     in
     {
       lib.mkHome = {deviceName, username, ...}: {
