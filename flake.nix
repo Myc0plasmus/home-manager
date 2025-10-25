@@ -49,7 +49,7 @@
       ];
     in
     {
-      lib.mkHome = {deviceName, username}: {
+      lib.mkHome = {deviceName, username, ...}: {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = {
