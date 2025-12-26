@@ -47,7 +47,7 @@ in
     ./programs/rofi.nix
     ./programs/stylix.nix
     ./nixvim/neovim.nix
-    inputs.home-manager-config.inputs.nixvim.homeModules.nixvim
+    inputs.home-manager-config.homeModules.nixvim
   ];
   # The home.packages option allows you to install Nix packages into your
   # environment.
