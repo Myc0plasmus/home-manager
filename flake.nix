@@ -33,7 +33,9 @@
       ...
     }@inputs:
     {
-      inputs = inputs; 
+      homeModules = {
+        nixvim = nixvim.homeModules.nixvim;
+      };
     };
     # let
     #   system = "x86_64-linux";
