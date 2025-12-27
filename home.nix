@@ -1,6 +1,7 @@
 {
   home_username,
   inputs,
+  selfInputs,
   dev,
   config,
   pkgs,
@@ -47,7 +48,7 @@ in
     ./programs/rofi.nix
     ./programs/stylix.nix
     ./nixvim/neovim.nix
-    inputs.home-manager-config.homeModules.nixvim
+    selfInputs.nixvim.homeModules.nixvim
   ];
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -81,9 +82,9 @@ in
   # plain files is through 'home.file'.
   home.file = {
     ".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
-    ".config/polybar-spotify".source = inputs.polybar-spotify;
-    ".config/polybar-calendar".source = inputs.polybar-calendar;
-    ".config/polybar-scripts".source = inputs.polybar-scripts;
+    ".config/polybar-spotify".source = selfInputs.polybar-spotify;
+    ".config/polybar-calendar".source = selfInputs.polybar-calendar;
+    ".config/polybar-scripts".source = selfInputs.polybar-scripts;
 
     #linking those scripts to .local/bin doesn't seem to put them in path
     # ".local/bin/lockscript".source = "${lockscript}/bin/lockscript";

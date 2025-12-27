@@ -28,13 +28,16 @@
 
   outputs =
     {
+      self,
       nixpkgs,
-      nixvim,
       ...
     }@inputs:
     {
-      homeModules = {
-        nixvim = nixvim.homeModules.nixvim;
+      homeModule = {home_username, systemInputs, dev, config, pkgs, lib, ...}:
+      import ./home.nix {
+        inherit home_username dev config pkgs lib;
+        selfInputs = inputs;
+        inputs = systemInputs;
       };
     };
     # let
