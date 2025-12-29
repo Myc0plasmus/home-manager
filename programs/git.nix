@@ -1,6 +1,6 @@
 {
   home_username,
-  inputs,
+  
   config,
   pkgs,
   ...

@@ -26,18 +26,11 @@
     };
   };
 
-  outputs =
+  outputs = inputs:
     {
-      self,
-      nixpkgs,
-      ...
-    }@inputs:
-    {
-      homeModule = {home_username, systemInputs, dev, config, pkgs, lib, ...}:
+      homeModule = {home_username, dev, config, pkgs, lib, ...}:
       import ./home.nix {
-        inherit home_username dev config pkgs lib;
-        selfInputs = inputs;
-        inputs = systemInputs;
+        inherit home_username dev config pkgs lib inputs;
       };
     };
     # let

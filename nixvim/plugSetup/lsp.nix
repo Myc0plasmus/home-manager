@@ -1,6 +1,5 @@
 {
   config,
-  inputs,
   pkgs,
   ...
 }:
@@ -10,7 +9,7 @@
     nixfmt-rfc-style
     rPackages.languageserver
   ];
-  nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+  nix.nixPath = [ "nixpkgs=${pkgs.path}" ];
   programs.nixvim = {
     plugins = {
       lsp = {
