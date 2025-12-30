@@ -14,8 +14,10 @@
   programs.git = {
     enable = true;
     settings = {
-      userName = "Myc0plasmus";
-      userEmail = "jablonski.natan@gmail.com";
+      user = {
+        name = "Myc0plasmus";
+        email = "jablonski.natan@gmail.com";
+      };
       aliases = {
         pu = "push";
         co = "checkout";
