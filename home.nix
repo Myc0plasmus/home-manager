@@ -38,7 +38,6 @@ in
     ./programs/mc.nix
     ./programs/zsh.nix
     ./programs/git.nix
-    ./programs/stylix.nix
   ] ++ modules;
   # The home.packages option allows you to install Nix packages into your
   # environment.
