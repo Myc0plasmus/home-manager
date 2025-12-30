@@ -2,12 +2,7 @@
   description = "Home Manager basic configuration of myc0plasmus";
 
   inputs = {
-    # Specify the source of Home Manager and Nixpkgs.
-    nixpkgs.url = "github:/nixos/nixpkgs?ref=nixos-unstable";
-    # home-manager = {
-    #   url = "github:nix-community/home-manager";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    # nixpkgs.url = "github:/nixos/nixpkgs?ref=nixos-unstable"; # Technically this is not needed
   };
 
   outputs = inputs:
