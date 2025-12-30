@@ -1,6 +1,5 @@
 {
   config,
-  
   pkgs,
   ...
 }:
@@ -26,17 +25,7 @@
     base0F = "#bd561d";
   };
 
-  stylix.image = ../dotfiles/user-wallpapers/wp12329536-nixos-wallpapers.png;
-
   stylix.targets = {
-    i3.enable = false;
     nixvim.enable = false;
-    rofi.enable = false;
-    kitty.enable = true;
-  };
-  stylix.cursor = {
-    package = pkgs.catppuccin-cursors.frappeDark;
-    name = "catppuccin-frappe-dark-cursors";
-    size = 25;
   };
 }

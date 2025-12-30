@@ -8,18 +8,6 @@
     #   url = "github:nix-community/home-manager";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
-    polybar-spotify = {
-      url = "github:PrayagS/polybar-spotify";
-      flake = false;
-    };
-    polybar-calendar = {
-      url = "github:nevarman/polybar-calendar";
-      flake = false;
-    };
-    polybar-scripts = {
-      url = "github:/polybar/polybar-scripts";
-      flake = false;
-    };
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,9 +16,9 @@
 
   outputs = inputs:
     {
-      homeModule = {home_username, dev, config, pkgs, lib, ...}:
+      homeModule = {home_username, module, dev, config, pkgs, lib, ...}:
       import ./home.nix {
-        inherit home_username dev config pkgs lib inputs;
+        inherit home_username module dev config pkgs lib inputs;
       };
     };
     # let

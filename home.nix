@@ -1,6 +1,7 @@
 {
   home_username,
   inputs,
+  module,
   dev,
   config,
   pkgs,
@@ -17,11 +18,6 @@ let
   #   cp -r $src/* $out/
   # '';
   # };
-  lockscript = import ./scripts/lockscript.nix { inherit pkgs; };
-  monitorScript = import ./scripts/monitorScript.nix { inherit pkgs; };
-  batteryScript = import ./scripts/batteryScript.nix { inherit pkgs; };
-  launchPolybar = import ./scripts/launchPolybar.nix { inherit pkgs; };
-  resetWallpaperLock = import ./scripts/resetWallpaperLock.nix { inherit pkgs; };
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -42,21 +38,14 @@ in
     ./programs/mc.nix
     ./programs/zsh.nix
     ./programs/git.nix
-    ./programs/i3.nix
-    ./programs/polybar.nix
-    ./programs/rofi.nix
     ./programs/stylix.nix
     ./nixvim/neovim.nix
     inputs.nixvim.homeModules.nixvim
+    module
   ];
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-    lockscript
-    monitorScript
-    batteryScript
-    launchPolybar
-    resetWallpaperLock
     pkgs.ripgrep
     pkgs.brave
     # # Adds the 'hello' command to your environment. It prints a friendly
@@ -79,12 +68,7 @@ in
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
-  home.file = {
-    ".config/user-wallpapers".source = ./dotfiles/user-wallpapers;
-    ".config/polybar-spotify".source = inputs.polybar-spotify;
-    ".config/polybar-calendar".source = inputs.polybar-calendar;
-    ".config/polybar-scripts".source = inputs.polybar-scripts;
-
+  # home.file = {
     #linking those scripts to .local/bin doesn't seem to put them in path
     # ".local/bin/lockscript".source = "${lockscript}/bin/lockscript";
     # ".local/bin/monitorScript".source = "${monitorScript}/bin/monitorScript";
@@ -100,7 +84,7 @@ in
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-  };
+  # };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home

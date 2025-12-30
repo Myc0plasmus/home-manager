@@ -1,3 +1,0 @@
-[submodule "scripts/polybar-spotify"]
-	path = scripts/polybar-spotify
-	url = https://github.com/PrayagS/polybar-spotify

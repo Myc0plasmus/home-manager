@@ -1,6 +1,4 @@
 {
-  home_username,
-  
   config,
   pkgs,
   ...
@@ -28,6 +26,11 @@
         directory = [
           "/etc/nixos"
           "/etc/nixos/.git"
+          "/etc/nixos/flakes/home-manager-config"
+          "/etc/nixos/flakes/home-manager-config/.git"
+          "/etc/nixos/flakes/i3-hm-module"
+          "/etc/nixos/flakes/i3-hm-module/.git"
+
         ];
       };
     };
