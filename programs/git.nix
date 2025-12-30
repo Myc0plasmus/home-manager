@@ -30,7 +30,8 @@
             "/etc/nixos/flakes/home-manager-config/.git"
             "/etc/nixos/flakes/i3-hm-module"
             "/etc/nixos/flakes/i3-hm-module/.git"
-
+            "/etc/nixos/flakes/nixvim-hm-module"
+            "/etc/nixos/flakes/nixvim-hm-module/.git"
           ];
         };
       };
