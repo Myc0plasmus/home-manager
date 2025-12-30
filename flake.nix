@@ -8,17 +8,13 @@
     #   url = "github:nix-community/home-manager";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = inputs:
     {
-      homeModule = {home_username, module, dev, config, pkgs, lib, ...}:
+      homeModule = {home_username, modules, dev, config, pkgs, lib, ...}:
       import ./home.nix {
-        inherit home_username module dev config pkgs lib inputs;
+        inherit home_username modules dev config pkgs lib inputs;
       };
     };
     # let

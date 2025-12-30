@@ -1,7 +1,7 @@
 {
   home_username,
   inputs,
-  module,
+  modules,
   dev,
   config,
   pkgs,
@@ -39,10 +39,7 @@ in
     ./programs/zsh.nix
     ./programs/git.nix
     ./programs/stylix.nix
-    ./nixvim/neovim.nix
-    inputs.nixvim.homeModules.nixvim
-    module
-  ];
+  ] ++ modules;
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
