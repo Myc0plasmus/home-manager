@@ -2,14 +2,33 @@
   description = "Home Manager basic configuration of myc0plasmus";
 
   inputs = {
-    # nixpkgs.url = "github:/nixos/nixpkgs?ref=nixos-unstable"; # Technically this is not needed
+    nixpkgs.url = "github:/nixos/nixpkgs?ref=nixos-unstable"; # Technically this is not needed
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs:
+  outputs = 
     {
-      homeModule = {home_username, modules, dev, config, pkgs, lib, ...}:
-      import ./home.nix {
-        inherit home_username modules dev config pkgs lib inputs;
+      home-manager,
+      ...
+    }@inputs:
+    let
+
+    in
+    {
+      homeModule = {home_username, modules, dev, ...}:
+      {
+        imports = [
+          home-manager.nixosModules.home-manager
+        ];
+        home-manager.useGlobalPkgs = true;
+        home-manager.useUserPackages = true;
+        home-manager.extraSpecialArgs = {
+          inherit home_username modules dev inputs;
+        };
+        home-manager.users."${home_username}" = ./home.nix;
       };
     };
 }
