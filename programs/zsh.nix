@@ -9,13 +9,14 @@
     pkgs.fzf
 
     #terminal utils
-    pkgs.htop
     pkgs.nethogs
     pkgs.man-db
     pkgs.man-pages
-    pkgs.tmux
     pkgs.porsmo
   ];
+  programs.btop.enable = true;
+  programs.htop.enable = true;
+  programs.tmux.enable = true;
   programs.zsh = {
     enable = true;
     syntaxHighlighting.enable = true;
